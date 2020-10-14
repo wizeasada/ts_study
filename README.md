@@ -15,10 +15,12 @@ package.json
 ```
 
 ### How To Use
-- $ npm install wizexpress-x.x.x.tgz
+```
+$ npm install wizexpress-x.x.x.tgz
+```
 - create "sample.ts" file
 ```
-import dayOfWeek from 'ts_study';
+import dayOfWeek from 'wizexpress';
 const toDay = dayOfWeek(Date())
 
 console.log(toDay);
