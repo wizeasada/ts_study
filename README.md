@@ -1,15 +1,21 @@
 # ts_study
 
-## 1.typescriptでnpmpackageの作成
+## 1.webpackの動作テスト
+- cd webpack_test
+- $ npm install ts_study-1.0.0.tgz
+- test.tsをコピーす
+- $ tsc test.ts
+- $ node test.js
 
+## 2.上記のnpmpackageの作成
+- cd webpack_test
 ### tsconfig.jsonを作成
 - $ npm install typescript 
 - $ npm install @types/node
 - $ npm install dayjs(テストに利用するライブラリ)
-- tsconfig.jsonを作成する
+- tsconfig.jsonを作成
 
-### package.jsonに追記
-- package.jsonに必要な項目を追加する
+### package.jsonに必要な項目を追加する
 ```
 - name
 パッケージの名前。前述の通り、既存のパッケージと被ってはいけない
@@ -35,19 +41,6 @@ package.jsonなど一部のファイルは、filesで指定した内容に影響
 #### コンパイル方法
 - $ npm run build
 
-### packageの作成方法
+### packageの作成
 - $ npm pack
 - ts_study-1.0.0.tgzというファイルが作成される
-
-
-## 2.作成したwebpackの動作テスト
-- $ npm install ts_study-1.0.0.tgz
-- test.tsをコピーする
-```
-import dayOfWeek from 'ts_study';
-const toDay = dayOfWeek(Date())
-console.log(toDay);
-console.log(dayOfWeek('2020-10-14'));
-```
-- $ tsc test.ts
-- $ node test.js
