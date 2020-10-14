@@ -1,0 +1,20 @@
+{
+  "name": "ts_study",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@types/node": "14.11.8",
+    "dayjs": "1.9.3",
+    "typescript": "3.9.7"
+  },
+  "devDependencies": {}
+}
